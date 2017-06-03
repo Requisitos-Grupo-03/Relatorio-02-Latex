@@ -2,12 +2,262 @@
 
 \partapendices
 
-\chapter{Primeiro Apêndice}
+\chapter{Documento de Visão}
+\section{Introdução}
+\subsection{Finalidade}
+Este documento tem como objetivo caracterizar a plataforma AutoTrack, bem como suas aplicações e funcionalidades.
 
-Texto do primeiro apêndice.
+Dessa maneira, visa-se que o leitor, seja ele usuário do sistema ou um investidor, consiga entender a proposta da plataforma, além das funcionalidades oferecidas.
 
-\chapter{Segundo Apêndice}
+\subsection{Escopo}
+A organização FGRacing é uma equipe de competição da Universidade de Brasília - Campus Gama. Atualmente, seu principal projeto é o desenvolvimento e construção de um veículo Fórmula SAE elétrico.
 
-Texto do segundo apêndice.
+Para auxiliar na gestão e desenvolvimento deste projeto, será desenvolvida a plataforma AutoTrack. Essa aplicação visa aperfeiçoar a rastreabilidade das atividades, a comunicação e transparência entre as áreas da organização e auxílio na produção de documentação administrativa. Para isso, será desenvolvido um sistema estruturado de kanbans, geração documentação automatizada e feed de informações sobre as diversas áreas.
+
+
+\subsection{Visão Geral}
+O documento está organizado de maneira que o leitor consiga extrair o máximo de informações possíveis, de forma coesa. Para isso, primeiramente são mostradas as necessidades e motivações que levaram à criação do software. Após isso, são detalhados os aspectos referentes aos envolvidos no projeto, definindo a equipe de desenvolvimento e a de gestão, além de apresentar como o software afetará os usuários.
+
+Concluindo, são apresentados os recursos e as funcionalidades que o software possuirá, assim como os requisitos necessários para a documentação de tal software.
+
+\section{Posicionamento}
+\subsection{Oportunidade de Negócios}
+A gerência é um dos pontos mais críticos da estrutura de uma empresa. Delegar, acompanhar e revisar atividades fazem parte do cotidiano, porém, se não feita de forma adequada, pode ser capaz de levar todo um projeto, ou mesmo uma organização, ao fracasso.
+
+Dessa forma, a plataforma AutoTrack visa auxiliar essas atividades empresariais. Lançando mão da ferramenta estruturada de kanbans, pode-se ter um controle das atividades de todos os níveis de uma empresa, auxiliando todos os tipos de funcionários.
+
+\subsection{Descrição do Problema}
+
+\begin{table}[!h]
+  \centering
+  \caption{Descrição do Problema}
+  \begin{tabular}{|c|l|}
+    \hline
+    \textbf{O problema seria}        & \parbox[t]{9cm}{A empresa sente falta de documentação e tem problemas com estímulo dos membros que resulta da falta de integração e visibilidades de diferentes áreas} \\ \hline
+    \textbf{Que afeta}               & A empresa                                                                                                                                             \\ \hline
+    \textbf{Cujo impacto é}          & \parbox[t]{9cm}{Falta de organização e desistência dos membros}                                                                                                        \\ \hline
+    \textbf{E uma boa solução seria} & \parbox[t]{9cm}{Uma ferramenta que proporcione maior visibilidade entre as áreas e ajude com a documentação administrativa da empresa}                                 \\ \hline
+  \end{tabular}
+\end{table}
+
+\subsection{Sentença de Posição do Produto}
+\begin{table}[!h]
+  \centering
+  \caption{Sentença de Posição do Produto}
+  \label{my-label}
+  \begin{tabular}{|c|l|}
+  \hline
+  \textbf{Para}          & Os integrantes da equipe de competição FGRacing                                                                                          \\ \hline
+  \textbf{Que}           & Desejam melhorar o processo de gestão de pessoas e tarefas da organização                                                                \\ \hline
+  \textbf{O AutoTrack}   & É um aplicativo Web                                                                                                                      \\ \hline
+  \textbf{Que}           & \parbox[t]{9cm}{Promove a rastreabilidade de tarefas e a automatização de documentação}                                                                   \\ \hline
+  \textbf{Diferente de}  & \parbox[t]{9cm}{Outros aplicativos e ferramentas (como o Trello, Zenhub, GitHub entre outros) que também visam a rastreabilidade de tarefas e documentos} \\ \hline
+  \textbf{Nosso produto} & \parbox[t]{9cm}{Proporciona uma solução personalizada e adaptada aos problemas que existem na FGR.}                                                       \\ \hline
+  \end{tabular}
+\end{table}
+
+\pagebreak
+
+\section{Descrição dos Envolvidos e dos Usuários}
+\subsection{Resumo dos Envolvidos}
+\begin{table}[!h]
+  \centering
+  \caption{Resumo dos Envolvidos}
+  \begin{tabular}{|c|l|l|}
+  \hline
+  \textbf{Nome}             & \textbf{Descrição}                                                                                                                                      & \textbf{Responsabilidade}                                                       \\ \hline
+  Equipe de Desenvolvimento & \parbox[t]{6cm}{Desejam melhorar o processo de gestão de pessoas e tarefas da organizaçãoEstudantes da Universidade de Brasília da disciplina de Requisitos de Software} & \parbox[t]{5cm}{Coleta de requisitos, idealização e desenvolvimento da solução de software}      \\ \hline
+  Líderes da FGRacing       & Gerentes das áreas da FGRacing                                                                                                                          & \parbox[t]{5cm}{Disponibilizar informações, acompanhar e validar o desenvolvimento da aplicação} \\ \hline
+  \end{tabular}
+\end{table}
+
+\subsection{Resumo dos Usuários}
+\begin{table}[!h]
+  \centering
+  \caption{Resumo dos Usuários}
+  \begin{tabular}{|c|l|}
+  \hline
+  \textbf{Nome}       & \multicolumn{1}{c|}{\textbf{Descrição}}                                                                                          \\ \hline
+  Capitania da FGR    & \parbox[t]{11cm}{Gerência geral da equipe, responsável por delegar tarefas e tomar decisões estratégicas sobre a organização.}                     \\ \hline
+  Gerentes de Projeto & \parbox[t]{11cm}{Gerencia as áreas operacionais e administrativas, responsável por delegar tarefas às equipes e manter o processo da organização.} \\ \hline
+  Líderes de equipe   & \parbox[t]{11cm}{Gerencia uma das equipes da organização. Delega atividades para os membros da equipe e as valida.}                                \\ \hline
+  Membros de equipe   & \parbox[t]{11cm}{Executam e documentam tarefas delegadas pelos níveis superiores da organização.}                                                  \\ \hline
+  \end{tabular}
+\end{table}
+
+\subsection{Ambiente do Usuário}
+O sistema AutoTrack poderá ser utilizado tanto em desktops como em smartphones em navegadores como:
+\begin{itemize}
+  \item Google Chrome
+  \item Mozilla Firefox
+  \item Opera
+  \item Safari
+\end{itemize}
+
+\section{Perfis dos Envolvidos}
+\subsection{Equipe de Desenvolvimento}
+\begin{table}[!h]
+  \centering
+  \caption{Perfis dos Envolvidos - Equipe de Desenvolvimento}
+  \begin{tabular}{|c|l|}
+  \hline
+  \textbf{Representantes}        & \begin{tabular}[c]{@{}l@{}}Josué Nascimento,\\ Lucas Martins,\\ Matheus Richard,\\ Thalisson Barreto.\end{tabular} \\ \hline
+  \textbf{Descrição}             & \parbox[t]{11cm}{Analistas de Requisitos e Desenvolvedores de Software}                                                              \\ \hline
+  \textbf{Tipo}                  & \parbox[t]{11cm}{Estudantes da Universidade de Brasília da disciplina de Requisitos de Software.}                                    \\ \hline
+  \textbf{Responsabilidade}      & \parbox[t]{11cm}{Coletar requisitos, idealizar, implementar e testar o software e suas funcionalidades.}                              \\ \hline
+  \textbf{Critérios de Sucesso}  & \parbox[t]{11cm}{Entrega de documentação descritiva dos requisitos do software, dentro do prazo estipulado.}                         \\ \hline
+  \textbf{Envolvimento}          & \parbox[t]{11cm}{Alto}                                                                                                               \\ \hline
+  \textbf{Problemas/Comentários} & \parbox[t]{11cm}{Desafio de elaborar e gerir um processo de desenvolvimento.}                                                         \\ \hline
+  \end{tabular}
+\end{table}
+
+\pagebreak
+
+\subsection{Líderes da FGR}
+\begin{table}[!h]
+  \centering
+  \caption{Perfis dos Envolvidos - Líderes da FGR}
+  \begin{tabular}{|c|l|}
+  \hline
+  \textbf{Representantes}        &                                                                                                                                  \\ \hline
+  \textbf{Descrição}             & \parbox[t]{11cm}{Alunos da UnB que trabalham com o objetivo de construírem um veículo elétrico, o fórmula SAE, para participar de uma competição.} \\ \hline
+  \textbf{Tipo}                  & \parbox[t]{11cm}{Estudantes da Universidade de Brasília}                                                                                           \\ \hline
+  \textbf{Responsabilidade}      & \parbox[t]{11cm}{Construir o fórmula SAE para conseguir competir}                                                                                  \\ \hline
+  \textbf{Critérios de Sucesso}  & \parbox[t]{11cm}{Conseguir construir o fórmula SAE e competir}                                                                                                \\ \hline
+  \textbf{Envolvimento}          & Alto                                                                                                                             \\ \hline
+  \textbf{Problemas/Comentários} & \parbox[t]{11cm}{Necessidade de uma ferramenta que os ajude a gerenciar a equipe e que dê maior visibilidade, de todos os setores, aos membros.}   \\ \hline
+  \end{tabular}
+\end{table}
+
+\section{Perfis dos Usuários}
+\subsection{Capitã da FGRacing}
+\begin{table}[!h]
+  \centering
+  \caption{Perfis dos Usuários - Capitã da FGRacing}
+  \begin{tabular}{|c|l|}
+  \hline
+  \textbf{Representante}        & Brenda Kennedy                                                                                           \\ \hline
+  \textbf{Descrição}            & \parbox[t]{11cm}{Pessoa que gerencia toda a organização, delega tarefas e toma decisões estratégicas sobre a organização.} \\ \hline
+  \textbf{Tipo}                 & Estudante da Universidade de Brasília                                                                    \\ \hline
+  \textbf{Responsabilidade}     & Criar, delegar e acompanhar tarefas das equipes                                                          \\ \hline
+  \textbf{Critérios de Sucesso} & \parbox[t]{11cm}{Conseguir construir o veículo e participar da competição}                                                 \\ \hline
+  \textbf{Envolvimento}         & Alto                                                                                            \\ \hline
+\end{tabular}
+\end{table}
+
+\pagebreak
+
+\subsection{Líderes da FGRacing}
+\begin{table}[!h]
+  \centering
+  \caption{Perfis dos Usuários - Líderes da FGRacing}
+  \begin{tabular}{|c|l|}
+  \hline
+  \textbf{Representante}        &                                                                                   \\ \hline
+  \textbf{Descrição}            & Gerente de uma área específica.                                                   \\ \hline
+  \textbf{Tipo}                 & Estudante da Universidade de Brasília.                                            \\ \hline
+  \textbf{Responsabilidade}     & Validar todo o trabalho dos membros.                                              \\ \hline
+  \textbf{Critérios de Sucesso} & \parbox[t]{11cm}{Conseguir realizar todas as tarefas dadas pelo capitão, delegando-as aos membros.} \\ \hline
+  \textbf{Envolvimento}         & Alto.                                                                             \\ \hline
+\end{tabular}
+\end{table}
+
+\subsection{Membros da FGRacing}
+\begin{table}[!h]
+  \centering
+  \caption{Perfis dos Usuários - Membros da FGRacings}
+  \begin{tabular}{|c|l|}
+  \hline
+  \textbf{Representante}        & Demais membros da equipe.                                                                            \\ \hline
+  \textbf{Descrição}            & \parbox[t]{11cm}{Pessoas que executam as tarefas delegadas pelos líderes das equipes e elabora relatórios sobre elas.} \\ \hline
+  \textbf{Tipo}                 & Estudante da Universidade de Brasília.                                                               \\ \hline
+  \textbf{Responsabilidade}     & \parbox[t]{11cm}{Executar demandas e elaborar relatórios de atividades.}                                               \\ \hline
+  \textbf{Critérios de Sucesso} & \parbox[t]{11cm}{Projetar, executar e apresentar de forma satisfatória o veículo Fórmula SAE Elétrico.}                \\ \hline
+  \textbf{Envolvimento}         & Alto                                                                                                 \\ \hline
+  \end{tabular}
+\end{table}
+
+\section{Principais Necessidades dos Usuários ou Envolvidos}
+\begin{table}[!h]
+  \centering
+  \caption{Principais Necessidades dos Usuários}
+  \begin{tabular}{|c|c|l|l|l|}
+  \hline
+  \textbf{Necessidade}         & \multicolumn{1}{l|}{\textbf{Prioridade}} & \textbf{Preocupações}                                                                                 & \textbf{Solução Proposta}                                                                 & \textbf{Solução Atual}                                                                                           \\ \hline
+  \parbox[t]{3cm}{Delegação de Tarefas}         & Alta                                     & \parbox[t]{4cm}{Acompanhar quais tarefas estão sendo realizadas e por quem.}                                           & \parbox[t]{3.4cm}{Estrutura de quadros Kanban}                                                               & \parbox[t]{3cm}{Delegação verbal de tarefas}                                                                                      \\ \hline
+  \parbox[t]{3cm}{Rastreabilidade de Tarefas}   & Alta                                     & \parbox[t]{4cm}{Acompanhar andamento das tarefas para que sejam realizadas adequadamente}                              & \parbox[t]{3.4cm}{Estrutura de quadros Kanban }                                                              & \parbox[t]{3cm}{Tarefas sem rastreabilidade definida}                                                                             \\ \hline
+  \parbox[t]{3cm}{Acompanhamento de atividades} & Alta                                     & \parbox[t]{4cm}{Desmotivação dos membros por não acompanhar progressos das demais equipes}                             & \parbox[t]{3.4cm}{Feed de informações sobre andamento de atividades}                                         & \parbox[t]{3cm}{Não há visibilidade do trabalho realizado por outras equipes}                                                     \\ \hline
+  \parbox[t]{3cm}{Geração de Relatórios}        & Média                                    & \parbox[t]{4cm}{Documentação de problemas e soluções, para que estas sejam usadas em problemas semelhantes no futuro.} & \parbox[t]{3.4cm}{Relatórios automatizados sobre tarefas, e/ou gerados em intervalos determinados de tempo.} & \parbox[t]{3cm}{Relatórios são subutilizados pela equipe}                                                                         \\ \hline
+  \parbox[t]{3cm}{Administração de Documentos}  & Média                                    & \parbox[t]{4cm}{Arquivo de documentos da organização, para obter um fácil acesso no futuro.}                           & \parbox[t]{3.4cm}{Sistema de arquivo de documentos com permissões de visualização e edição personalizadas.}  & \parbox[t]{3cm}{Arquivos mantidos em ambiente local ou na ferramenta Google Drive, com permissões de edição para qualquer membro} \\ \hline
+  \end{tabular}
+\end{table}
+
+\pagebreak
+
+\section{Alternativas e Concorrência}
+\subsection{Trello}
+Ferramenta de gerência de projetos. Utiliza quadros Kanban para organizar e rastrear o desenvolvimento das tarefas. Apesar de gerenciar atividades e pessoas, não oferece suporte à gerência de arquivos, nem oferece um feed de atividades.
+
+\subsection{Google Drive}
+Ferramenta de armazenamento utilizada para manter os documentos e suas diferentes versões. Apesar de armazenar os documentos não oferece suporte para a criação dos mesmos de forma automatizada.
+
+\subsection{Zenhub e GitHub}
+Extensão para navegador, que, somada ao GitHub, oferece controle de atividades por meio de quadros Kanban. É possível criar e alocar épicos, features e histórias de usuários. Entretanto, não está disponível o controle de arquivos, nem geração de relatórios automatizados.
+
+\section{Visão Geral do Produto}
+\subsection{Perspectiva do Produto}
+A plataforma tem como objetivo facilitar o gerenciamento dos membros da empresa pelos líderes. A interação será feita de maneira que o capitão possa delegar tarefas as equipes e por sua vez os gerentes de cada equipe delegar essas tarefas aos membros de forma que todas as tarefas feitas tenham que ser validadas pelos gerentes em um desenvolvimento transparente onde todos os membros são capazes de ver o trabalho das outras equipes.
+
+\subsection{Resumo dos Recursos}
+\begin{table}[!h]
+  \centering
+  \caption{Resumo dos Recursos}
+  \begin{tabular}{|c|c|}
+    \hline
+    \textbf{Benefício para o Cliente}      & \textbf{Recursos de Suporte}                                         \\ \hline
+    Melhora da rastreabilidade do trabalho & \parbox[t]{9cm}{Estrutura de quadros Kanban para os diferentes níveis da organização} \\ \hline
+    Melhora da visibilidade do trabalho    & \parbox[t]{9cm}{Feed de informações sobre andamento de atividades}                    \\ \hline
+    Melhora da documentação do trabalho    & \parbox[t]{9cm}{Relatórios automatizados sobre tarefas gerados periodicamente}        \\ \hline
+    Melhora da privacidade do trabalho     & \parbox[t]{9cm}{Sistema de arquivo de documentos com controle de permissões}          \\ \hline
+  \end{tabular}
+\end{table}
+
+\section{Recursos do Produto}
+\begin{itemize}
+  \item Estrutura de quadros Kanban para os diferentes níveis da organização
+  \item Feed de informações sobre andamento de atividades
+  \item Relatórios automatizados sobre tarefas
+  \item Relatórios gerados em intervalos determinados de tempo
+  \item Sistema de arquivo de documentos com controle de permissões
+\end{itemize}
+
+\section{Restrições}
+A proposta do serviço ofertado que é abrangida nesse documento envolve a utilização de certos recursos que necessitam de um navegador, tanto em desktop como em um smartphone. De modo que tais recursos implicam em certas limitações do produto, estas limitações seriam:
+
+\begin{itemize}
+  \item O usuário deve dispor de um provedor de internet;
+  \item O usuário deve dispor de um computador ou um celular;
+  \item O usuário deve dispor de um navegador.
+\end{itemize}
+
+\section{Intervalo de Qualidade}
+\subsection{Requisitos do Sistema}
+Por se tratar de uma aplicação web, poderá ser acessada a partir dos navegadores de internet mais comuns. Desde modo, o software estará disponível para os principais sistemas operacionais (Linux, Mac, Windows) e para dispositivos móveis (Android, iOS).
+
+\subsection{Requisitos de Portabilidade}
+O sistema será disponibilizado em formato de site, que modo que será melhor acessado através dos navegadores Google Chrome e/ou Firefox. Ademais, devido as características flexíveis apresentadas pela aplicação, o sistema será acessível também via browser no celular.
+
+\subsection{Requisitos de Privacidade}
+Todos os arquivos enviados à plataforma serão organizados de forma que todas as áreas da organização possam visualizá-los e baixá-los. Porém, apenas a área a qual o arquivo pertence poderá modificá-lo.
+
+\subsection{Requisitos de Design}
+O sistema deverá ser projetado (funcionalidades e aparência) de forma que o seu acesso, aprendizado e uso seja fácil e rápido. Dessa forma, os membros da equipe não irão se sentir desmotivados quanto ao uso da ferramenta.
+
+
+
+
+
+
+
 
 \end{apendicesenv}
