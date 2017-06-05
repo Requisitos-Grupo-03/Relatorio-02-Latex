@@ -1,0 +1,84 @@
+
+\chapter[Contexto do Negócio]{Contexto do Negócio}
+\section{Introdução}
+A organização FGRacing é uma equipe de competição da Universidade de Brasília -
+Campus Gama. Atualmente, seu principal projeto é o desenvolvimento e construção
+de um veículo Fórmula SAE elétrico. Este é um veículo especial para a competição
+Fórmula SAE Brasil, e um protótipo dele pode ser observado na figura \ref{sae}.
+
+A equipe é organizada de forma vertical, seguindo a seguinte ordem de hierarquia:
+
+\begin{itemize}
+  \item Capitão (cargo mais alto da empresa)
+  \item Gerente de projetos
+  \item Líderes (Membros os quais gerenciam os setores da empresa)
+  \item Membros
+\end{itemize}
+
+Apesar da organização, a equipe enfrenta dificuldades na gerência dos projetos realizados. A integração entre os setores é falha,
+ pois não existe uma comunicação eficiente entre eles. A falha na comunicação faz com que os membros sintam-se desmotivados,
+  visto que a má integração das áreas causa a sensação de que o projeto está estagnado. Como consequência da desmotivação,
+  os membros atrasam as tarefas, comprometendo o projeto, enquanto outros chegam a abandonar a equipe.
+
+A empresa já tentou utilizar ferramentas de auxílio de gerência, porém a maioria não obteve sucesso. Entre elas pode-se
+ citar: Trello, Slack, Whatsapp, Facebook e Google Drive. Dentre essas ferramentas, as únicas quem ainda se encontram
+ em utilização são o Whatsapp e Google Drive. Quanto as que tiveram seu uso parado foram relatadas os seguintes problemas:
+
+\begin{itemize}
+  \item \textbf{Trello:} os líderes designavam atividades e tarefas para seus membros do setor , mas não davam feedback sobre suas execuções.
+  \item \textbf{Slack:} os membros mostram muita resistência em migrar e se adaptar à nova plataforma.
+  \item \textbf{Facebook:} utilizado apenas 2 vezes para fazer enquetes com a equipe.
+\end{itemize}
+
+Uma consequência da utilização de muitas ferramentas é a descentralização de informações. Isto torna árduo o controle de
+informações, visto que não há padronização da divulgação destas, o que causa retrabalho na busca e compartilhamento da notícia
+ou arquivo desejado.
+
+O armazenamento de  documentos, .CADs e outros arquivos, é feito através do Google Drive. Entretanto, o compartilhamento de
+ um arquivo nessa plataforma acaba sendo entre todos os membros da equipe, de forma que todos os membros têm acesso à
+ documento que seriam “privados” de um setor específico. Isso acarreta numa falha de segurança: membros podem modificar, e
+  até mesmo deletar, mesmo que não-intencionalmente, arquivos privados e cruciais para o projeto. Até mesmo usuários mal
+  intencionados poderiam prejudicar a Equipe, ainda que não haja relatos desse tipo de experiência.
+
+Outro ponto em que a equipe falha é no desenvolvimento de documentação interna, especialmente em atas de reuniões e documentos
+ técnicos sobre o projeto. A consequência da ausência de documentação sobre as reuniões são: informações perdidas, tomadas
+  de decisões erradas, o que de certo modo faz com as reuniões acabem não tendo um cunho oficial. Os documentos técnicos,
+  por sua vez, são, geralmente, feitos tardiamente, apenas quando necessários. Isto prejudica a equipe principalmente em
+  momentos em que é necessário apresentar o projeto para algum potencial patrocinador.
+
+A gerência da FGRancing vem até então demonstrando dificuldades em administrar a equipe com as ferramentas já dispostas
+ no mercado. Nesse cenário, se faz necessário a elaboração de um software que atenda às peculiaridades	administrativas
+  da empresa.
+  \pagebreak
+
+\section{Problema}
+Com a finalidade de traçar os sub-problemas e que levam a raiz do problema, a Equipe de Engenharia de Requisitos, em conjunto com o cliente, elaborou um Diagrama de Fishbone. Este diagrama, evoluído e priorizado com a professora e o cliente, permitiu evidenciar as raízes do problema maior da empresa: a falha na comunicação e transparência da equipe.
+
+A representação gráfica deste diagrama é apresentada na Figura \ref{fishbone}.
+
+\begin{figure}[!h]
+        \centering
+        \includegraphics[keepaspectratio=true,scale=0.9]{figuras/fishbone.eps}
+        \caption{Diagrama de Fishbone\label{fishbone}}
+\end{figure}
+
+
+\section{Solução}
+A solução proposta proposta foi o desenvolvimento de uma plataforma web capaz de integrar a gerência de atividades,
+pessoas e arquivos. Esta solução está brevemente explicitada a seguir.
+
+\subsection{Feed de Atividades}
+A ferramenta irá dispor de um feed de atividades, onde todos os membros da equipe poderão visualizar o andamento
+ dos projetos através do acompanhamento das ações realizadas. A ferramenta será capaz, ainda, de gerar
+  relatórios automatizados sobre o status das atividades.
+
+\subsection{Estrutura de Kanbans}
+O sistema irá dispor de um esquema de kanbans estruturados conforme a hierarquia da empresa. O capitão poderá designar tarefas para os times,
+bem como acompanhar seu desenvolvimento. Os líderes de setores, por sua vez, receberão as atividades a eles designadas,
+ e distribuirão aos seus membros. Por fim, o time utiliza o kanban para organizar e informar a rastreabilidade das tarefas.
+
+\subsection{Gerência de Arquivos e Documentos}
+A entrega de uma atividade pode ser dependente da anexação de um arquivo. O sistema AutoTrack irá
+gerenciar estes anexos, organizando-os conforme os setores da equipe, e suas áreas. Os arquivos terão um nível de privacidade.
+ Assim, arquivos de setores específicos ficarão disponíveis para modificações apenas para membros deste setor, porém
+  ficarão disponíveis para os membros de outros setores apenas para visualização.
