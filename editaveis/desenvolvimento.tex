@@ -6,15 +6,72 @@ Campus Gama. Atualmente, seu principal projeto é o desenvolvimento e construç�
 de um veículo Fórmula SAE elétrico. Este é um veículo especial para a competição
 Fórmula SAE Brasil, e um protótipo dele pode ser observado na figura \ref{sae}.
 
+\begin{figure}[!h]
+        \centering
+        \includegraphics[keepaspectratio=true,scale=0.3]{figuras/sae.eps}
+        \caption{Protótipo - Fórmula SAE\label{sae}}
+\end{figure}
+
 A equipe é organizada de forma vertical, seguindo a seguinte ordem de hierarquia:
 
 \begin{itemize}
-  \item Capitão (cargo mais alto da empresa)
-  \item Gerente de projetos
-  \item Líderes (Membros os quais gerenciam os setores da empresa)
-  \item Membros
+  \item Capitania;
+  \item Gerência de projetos;
+  \item Líderes de Equipe (Membros os quais gerenciam os setores da empresa (times));
+  \item Membros de Equipe.
 \end{itemize}
 
+A Capitania é o nível mais alto da Equipe. O Capitão é responsável por tomar as decisões estratégicas da equipe e decidir o que será realizado pelas equipes.
+
+As equipes da FGR são divididas em duas frentes principais: Administrativo e Operacional. Cada uma dessas frentes é administrada por um Gerente de Projeto, que é responsável por gerenciar as equipes e delegar, revisar e validar atividades a cada uma delas.
+
+O Líder de Equipe é responsável por cumprir as atividades delegadas pelo gerente de projeto, gerenciando a equipe e delegando tarefas para cada membro de equipe.
+
+Já o Membro de equipe é responsável por executar e produzir relatórios sobre as tarefas delegadas pelo Líder da sua equipe.
+
+É importante ressaltar que, nesta organização, o mesmo indivíduo pode exercer mais de um papel na equipe, um em cada frente da FGR. Por exemplo, um membro da equipe de Marketing, contida na Frente Administrativa, pode, ao mesmo tempo, ser Líder da equipe de Estruturas, contida na Frente Operacional da organização.
+
+\section{Elicitação de Requisitos}
+
+Visando o pleno entendimento do contexto e problemas da equipe, bem como coletar os requisitos do sistema de
+maneira satisfatória, foi definida a aplicação de três técnicas de elicitação de requisitos, como foi descrito no
+relatório anterior do projeto: Entrevista, Brainstorming e Observação.
+
+A aplicação destas técnicas possibilitou a compreensão dos gargalos presentes no processo utilizado pela organização e a
+elaboração de uma solução de software que auxilie na resolução destes obstáculos.
+
+A técnica de Observação foi aplicada por meio do acompanhamento das atividades da FGR em suas ferramentas de comunicação e
+organização de arquivos, e em suas Reuniões Gerais.
+
+A equipe de Analistas de Requisitos observou e avaliou o uso da ferramenta de comunicação \textit{“WhatsApp”} e da ferramenta de
+arquivamento em nuvem \textit{“Google Drive”} por parte dos membros da organização. Esta observação resultou em uma compreensão da
+maneira como a equipe trabalha, se comunica e se organiza, o que possibilitou a identificação de problemas. Além disso, o
+acompanhamento das Reuniões Gerais quinzenais da equipe revelou que os times possuem uma baixa visibilidade da totalidade
+da equipe. A inexistência da prática de documentação das reuniões também é um fator que gera problemas.
+
+A técnica de Entrevista foi realizada na modalidade de “Entrevista Fechada”, que consiste em uma reunião, onde o analista
+de requisitos submete um stakeholder a uma série de perguntas pré-definidas \cite{gunda2008}. O roteiro da entrevista realizada
+pode ser encontrado no anexo \ref{annex:roteiro}.
+
+A Entrevista foi aplicada pela equipe de análise de requisitos a dois membros da FGRacing. As respostas foram documentadas
+e analisadas pela equipe, o que resultou em um conhecimento mais aprofundado do contexto, do processo e das dificuldades
+enfrentadas pela equipe. A ata da reunião onde a entrevista foi realizada pode ser encontrada no apêndice \ref{appendix:reuniao1}.
+
+O Brainstorming consiste em uma técnica de grupo utilizada para gerar soluções para um problema específico \cite{gunda2008}.
+Esta técnica foi aplicada por meio de uma reunião com stakeholders. Por causa de compromissos imprevistos, a presença de
+membros da FGR nesta reunião não foi possível. Apesar disto, a reunião não pôde ser adiada, pois isto resultaria em um
+atraso muito grande no andamento do projeto. Por isso, o Brainstorming foi realizado apenas pelos quatro membros da equipe
+de desenvolvimento.
+
+As propostas para solução de software para a FGRacing, geradas no Brainstorming, foram apresentadas para o cliente, após
+serem concluídas, para que fossem validadas. Esta prática possibilitou a aplicação adequada da técnica, mesmo sem a presença
+ do cliente, o que evitou atrasos ou a elicitação incorreta de requisitos.
+
+
+
+
+
+\section{Problema}
 Apesar da organização, a equipe enfrenta dificuldades na gerência dos projetos realizados. A integração entre os setores é falha,
  pois não existe uma comunicação eficiente entre eles. A falha na comunicação faz com que os membros sintam-se desmotivados,
   visto que a má integração das áreas causa a sensação de que o projeto está estagnado. Como consequência da desmotivação,
@@ -49,10 +106,10 @@ Outro ponto em que a equipe falha é no desenvolvimento de documentação intern
 A gerência da FGRancing vem até então demonstrando dificuldades em administrar a equipe com as ferramentas já dispostas
  no mercado. Nesse cenário, se faz necessário a elaboração de um software que atenda às peculiaridades	administrativas
   da empresa.
-  \pagebreak
 
-\section{Problema}
-Com a finalidade de traçar os sub-problemas e que levam a raiz do problema, a Equipe de Engenharia de Requisitos, em conjunto com o cliente, elaborou um Diagrama de Fishbone. Este diagrama, evoluído e priorizado com a professora e o cliente, permitiu evidenciar as raízes do problema maior da empresa: a falha na comunicação e transparência da equipe.
+  \pagebreak
+\subsection{Diagrama de Causa e Efeito (Fishbone)}
+Com a finalidade de traçar os sub-problemas e que levam a raiz do problema, a Equipe de Engenharia de Requisitos, em conjunto com o cliente, elaborou um Diagrama de Causa e Efeito (Fishbone). Este diagrama, evoluído e priorizado com a professora e o cliente, permitiu evidenciar as raízes do problema maior da empresa: a falha na comunicação e transparência da equipe.
 
 A representação gráfica deste diagrama é apresentada na Figura \ref{fishbone}.
 
@@ -63,9 +120,9 @@ A representação gráfica deste diagrama é apresentada na Figura \ref{fishbone
 \end{figure}
 
 
-\section{Solução}
-A solução proposta proposta foi o desenvolvimento de uma plataforma web capaz de integrar a gerência de atividades,
-pessoas e arquivos. Esta solução está brevemente explicitada a seguir.
+\subsection{Resumo da Solução}
+A solução proposta proposta foi o desenvolvimento de uma plataforma web  capaz de integrar a gerência de atividades, pessoas e arquivos.
+Esta solução foi denominada \textbf{AutoTrack} e está brevemente explicitada a seguir.
 
 \subsection{Feed de Atividades}
 A ferramenta irá dispor de um feed de atividades, onde todos os membros da equipe poderão visualizar o andamento
