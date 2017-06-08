@@ -124,6 +124,9 @@ A representação gráfica deste diagrama é apresentada na Figura \ref{fishbone
 A solução proposta proposta foi o desenvolvimento de uma plataforma web  capaz de integrar a gerência de atividades, pessoas e arquivos.
 Esta solução foi denominada \textbf{AutoTrack} e está brevemente explicitada a seguir.
 
+% \pagebreak
+
+
 \subsection{Feed de Atividades}
 A ferramenta irá dispor de um feed de atividades, onde todos os membros da equipe poderão visualizar o andamento
  dos projetos através do acompanhamento das ações realizadas. A ferramenta será capaz, ainda, de gerar
@@ -140,10 +143,17 @@ gerenciar estes anexos, organizando-os conforme os setores da equipe, e suas ár
  Assim, arquivos de setores específicos ficarão disponíveis para modificações apenas para membros deste setor, porém
   ficarão disponíveis para os membros de outros setores apenas para visualização.
 
+Segue-se a representação gráfica da logo do projeto.
+
+  \begin{figure}[!h]
+    \centering
+    \includegraphics[keepaspectratio=true,scale=0.7]{figuras/logo.eps}
+    \caption{Autotrack - Logo}
+  \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Gerência de Requisitos}
-\section{Nível de Portfólio}
+\section{Nível de Portfólio \label{sec:portfolio}}
 O nível de portfólio é a camada do SAFe que proporciona uma visão com maior abstração, permitindo a identificação dos temas de investimento
 do projeto e por consequência, os épicos. O nosso processo apresenta as seguintes atividades no nível de portfólio:
 
@@ -154,7 +164,7 @@ do projeto e por consequência, os épicos. O nosso processo apresenta as seguin
   \item Validar e administrar mudanças
 \end{itemize}
 
-\pagebreak
+% \pagebreak
 
 \begin{figure}[!h]
         \centering
@@ -178,6 +188,28 @@ Após analisar e entender o contexto da FGR identificou-se que havia necessidade
   \item \textbf{Épico 04 - EP-04:} \textit{Gerar Relatórios Automatizados:} Diz respeito a automatização de relatórios para somar à documentação da empresa.
 \end{itemize}
 
+\subsection{Requisitos Não Funcionais}
+Como descrito em \ref{sec:portfolio}, o levantamento de requisitos não-funcionais foi feito juntamente ao cliente. Os RNF identificados estão listados a seguir.
+
+\begin{itemize}
+  \item Requisitos de portabilidade:
+    \begin{itemize}
+      \item O sistema deve ser executado em plataformas fixas e móveis (celulares, tablets).
+      \item O sistema deve ser compatível com os browsers Google Chrome, Safari, etc.
+    \end{itemize}
+  \item Requisitos de Usabilidade:
+    \begin{itemize}
+      \item Sistema deve apresentar boa usabilidade, permitindo que tarefas primárias sejam realizadas com poucas interações (de 1 a 3).
+      \item Sistema deve ser de fácil aprendizado, permitindo que o usuário aprenda a utilizar a plataforma durante a interação, sem a necessidade de leituras ou treinamentos externos.
+    \end{itemize}
+  \item Requisitos de Segurança:
+\end{itemize}
+
+
+Requisitos de Usabilidade:
+Sistema deve apresentar boa usabilidade, permitindo que tarefas primárias sejam realizadas com poucas interações (de 1 a 3).
+Sistema deve ser de fácil aprendizado, permitindo que o usuário aprenda a utilizar a plataforma durante a interação, sem a necessidade de leituras ou treinamentos externos.
+Requisitos de Segurança: Apenas membros de determinada área poderão alterar os arquivos desta área.
 
 \subsection{Roadmap}
 Roadmap é uma técnica flexível amplamente utilizada na indústria para apoiar o planejamento estratégico e a longo
